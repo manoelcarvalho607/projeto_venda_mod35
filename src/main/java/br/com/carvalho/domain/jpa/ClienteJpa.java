@@ -25,7 +25,7 @@ import br.com.carvalho.dao.Persistente;
 public class ClienteJpa implements Persistente {
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="cliente_seq")
+	@GeneratedValue(strategy=GenerationType.AUTO, generator="cliente_seq")
 	@SequenceGenerator(name="cliente_seq", sequenceName="sq_cliente", initialValue = 1, allocationSize = 1)
 	private Long id;
 	

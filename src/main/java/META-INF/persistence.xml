@@ -7,12 +7,12 @@
 		
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		
-		<!--<class>br.com.rpires.domain.Cliente</class>  -->
-		
+		<class>br.com.carvalho.domain.jpa.ClienteJpa</class>  
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
 		
 		<properties>
-            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" /> <!-- DB Driver -->
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/db_projeto_vendas_2?characterEncoding=utf-8" /> <!-- BD Mane -->
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" /> <!-- DB Driver -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/db_projeto_vendas_2" /> <!-- BD Mane ?characterEncoding=utf-8 -->
             <property name="javax.persistence.jdbc.user" value="root" /> <!-- DB User -->
             <property name="javax.persistence.jdbc.password" value="123456" /> <!-- DB Password -->
 
